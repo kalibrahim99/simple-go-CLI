@@ -2,6 +2,10 @@
 
 A simple command-line calculator written in Go. This project allows you to perform basic arithmetic operations (+, -, *, /) interactively from your terminal.
 
+<p align="center">
+  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWE5MTM4cHFvdnVkdHp1MmkyOWU5dDlodmt4amhibGNwam9hOW5jciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1F8FRRud3GiQnSKVLn/giphy.gif" alt="CLI Demo" width="700">
+</p>
+
 ## Features
 
 - Interactive CLI for calculations
