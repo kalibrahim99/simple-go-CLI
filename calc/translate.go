@@ -7,8 +7,8 @@ import (
 	"strings"
 )
 
-func Operation(scan *bufio.Scanner, text string) (int , error) {
-	sum := 0
+func Operation(scan *bufio.Scanner, text string) (float64 , error) {
+	sum := 0.00
 	for {
 		fmt.Println("current number :",sum)
 		fmt.Printf("%s", text)
@@ -36,24 +36,25 @@ func Operation(scan *bufio.Scanner, text string) (int , error) {
 		 
 		switch operator {
 		case "+":
-			sum += number
+			sum += float64(number)
 		case "-":
-			sum -= number
+			sum -= float64(number)
 		case "*":
-			sum *= number
+			sum *= float64(number)
 		case "/":
 			if number == 0 {
 				fmt.Println("please write a value defering zero")
 				continue
 			}
-			
-			sum /= number
-			default :
+
+			sum /= float64(number)
+		default:
 			fmt.Println("please try a operator", operator)
 		}
 	
 	
 	}
 	fmt.Println("good day")
-			return sum, nil
+	return sum, nil
+
 }
